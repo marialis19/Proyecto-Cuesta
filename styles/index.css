@@ -1,4 +1,6 @@
-/* Tipografía general */
+/* --------------------------------------
+   Tipografía y base general
+-------------------------------------- */
 body {
   font-family: 'Quicksand', sans-serif;
   color: #333;
@@ -7,31 +9,35 @@ body {
   padding: 0;
 }
 
-/* NAVBAR general */
+/* --------------------------------------
+   NAVBAR
+-------------------------------------- */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 80px;
   padding: 0 1rem;
-  background-color: #fff; /* o el color que uses */
+  background-color: #fff;
   overflow: hidden;
 }
 
-/* LOGO más grande y bien posicionado */
+/* Logo */
 .logo img,
 .navbar-brand img {
-  height: 125px; /* más grande */
-  margin-left: -20px; /* lo acercamos más al borde izquierdo */
+  height: 125px;
+  margin-left: -20px;
   object-fit: contain;
   display: block;
 }
 
-/* HERO con imagen de fondo */
+/* --------------------------------------
+   HERO SECTION con imagen de fondo
+-------------------------------------- */
 .hero {
-  background-image: url('../assets/imagen/destacada2.jpg');
+  background-image: url('../assets/imagen/destacada4.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center bottom; /* Imagen centrada desde la mitad hacia abajo */
   height: 100vh;
   position: relative;
   display: flex;
@@ -44,38 +50,53 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* oscurece imagen */
+  background: rgba(0, 0, 0, 0.5); /* Capa oscura encima de la imagen */
   z-index: 1;
 }
 
-/* CONTENIDO DEL HERO */
-.text-content {
+/* Contenedor principal del texto */
+.hero-content {
   position: relative;
   z-index: 2;
   padding: 2rem;
   max-width: 800px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
-/* TÍTULO PRINCIPAL */
+/* Caja para el título (arriba) */
+.hero-title-box {
+  margin-top: 80px;
+}
+
+/* Título */
 .hero-title {
   font-family: 'Cardo', serif;
   font-size: 3rem;
-  margin-bottom: 0.5rem; /* ↓ antes era 1rem */
-  margin-top: -50px;     /* ↑ lo subimos un poco */
+  margin-bottom: 0.5rem;
+  color: #fff;
 }
 
-/* ESLOGAN EN MAYÚSCULAS */
+/* Caja para el eslogan + botón (abajo) */
+.hero-info-box {
+  margin-bottom: 80px;
+}
+
+/* Eslogan */
 .hero-slogan {
+  font-family: 'Georgia', serif; /* Más seria */
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-top: 1.2rem;     /* ↑ lo separamos más del título */
   margin-bottom: 1.5rem;
+  color: #fff;
 }
 
-/* BOTÓN */
+/* Botón */
 .btn-custom {
   background-color: #14402a;
   color: #fff;
@@ -91,7 +112,9 @@ body {
   color: #fff;
 }
 
-/* RESPONSIVE */
+/* --------------------------------------
+   RESPONSIVE
+-------------------------------------- */
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.2rem;
@@ -104,6 +127,14 @@ body {
   .logo img {
     height: 70px;
     margin-left: -10px;
+  }
+
+  .hero-title-box {
+    margin-top: 60px;
+  }
+
+  .hero-info-box {
+    margin-bottom: 60px;
   }
 }
 
@@ -118,6 +149,14 @@ body {
 
   .logo img {
     height: 60px;
+  }
+
+  .hero-title-box {
+    margin-top: 40px;
+  }
+
+  .hero-info-box {
+    margin-bottom: 40px;
   }
 }
 
