@@ -210,3 +210,28 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+@media (max-width: 576px) {
+  .hero-content {
+    padding: 2rem 1rem;
+    gap: 1rem; /* si estás usando gap, podés controlar mejor la separación */
+    justify-content: space-around; /* en lugar de space-between para compactar */
+  }
+
+  .hero-title-box {
+    margin-top: 0.5rem; /* antes estaba en 1rem */
+  }
+
+  .hero-logo-box {
+    transform: translate(-50%, -50%); /* lo centra mejor verticalmente */
+  }
+
+  .hero-info-box {
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-info-background {
+    padding: 1.5rem;
+  }
+}
+
