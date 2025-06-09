@@ -1,4 +1,4 @@
-/* Tipografía */
+/* Tipografía general */
 body {
   font-family: 'Quicksand', sans-serif;
   color: #333;
@@ -7,7 +7,27 @@ body {
   padding: 0;
 }
 
-/* HERO con imagen destacada */
+/* NAVBAR general */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 1rem;
+  background-color: #fff; /* o el color que uses */
+  overflow: hidden;
+}
+
+/* LOGO más grande y bien posicionado */
+.logo img,
+.navbar-brand img {
+  height: 125px; /* más grande */
+  margin-left: -20px; /* lo acercamos más al borde izquierdo */
+  object-fit: contain;
+  display: block;
+}
+
+/* HERO con imagen de fondo */
 .hero {
   background-image: url('../assets/imagen/destacada2.jpg');
   background-size: cover;
@@ -15,40 +35,47 @@ body {
   height: 100vh;
   position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-/* Superposición oscura para mejorar legibilidad */
 .hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5); /* oscurece imagen */
   z-index: 1;
 }
 
-/* Contenido centrado sobre fondo */
-.hero-content {
+/* CONTENIDO DEL HERO */
+.text-content {
   position: relative;
   z-index: 2;
-  background-color: rgba(255, 255, 255, 0.9);
   padding: 2rem;
-  border-radius: 1rem;
-  max-width: 700px;
-  color: #14402a;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.hero-content h1 {
+/* TÍTULO PRINCIPAL */
+.hero-title {
   font-family: 'Cardo', serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  margin-bottom: 0.5rem; /* ↓ antes era 1rem */
+  margin-top: -50px;     /* ↑ lo subimos un poco */
 }
 
-.hero-content p {
-  font-size: 1.1rem;
+/* ESLOGAN EN MAYÚSCULAS */
+.hero-slogan {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 1.2rem;     /* ↑ lo separamos más del título */
+  margin-bottom: 1.5rem;
 }
 
-/* Botón personalizado */
+/* BOTÓN */
 .btn-custom {
   background-color: #14402a;
   color: #fff;
@@ -64,28 +91,33 @@ body {
   color: #fff;
 }
 
-/* Adaptaciones RESPONSIVAS */
+/* RESPONSIVE */
 @media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2rem;
+  .hero-title {
+    font-size: 2.2rem;
   }
 
-  .hero-content {
-    padding: 1.5rem;
+  .hero-slogan {
+    font-size: 1.3rem;
   }
 
-  .btn-custom {
-    width: 100%;
+  .logo img {
+    height: 70px;
+    margin-left: -10px;
   }
 }
 
 @media (max-width: 576px) {
-  .hero-content p {
-    font-size: 1rem;
+  .hero-title {
+    font-size: 1.8rem;
   }
 
-  .navbar-brand span {
-    font-size: 1.2rem;
+  .hero-slogan {
+    font-size: 1.1rem;
+  }
+
+  .logo img {
+    height: 60px;
   }
 }
 
