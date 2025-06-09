@@ -1,6 +1,4 @@
-/* --------------------------------------
-   Tipografía y base general
--------------------------------------- */
+/* Tipografía y base general */
 body {
   font-family: 'Quicksand', sans-serif;
   color: #333;
@@ -9,9 +7,7 @@ body {
   padding: 0;
 }
 
-/* --------------------------------------
-   NAVBAR
--------------------------------------- */
+/* NAVBAR */
 .navbar {
   display: flex;
   align-items: center;
@@ -22,67 +18,93 @@ body {
   overflow: hidden;
 }
 
-/* Logo */
-.logo img,
-.navbar-brand img {
-  height: 125px;
-  margin-left: -20px;
-  object-fit: contain;
-  display: block;
+/* Fondo personalizado reutilizable */
+.bg-custom {
+  background-color: #14402a !important;
 }
 
-/* --------------------------------------
-   HERO SECTION con imagen de fondo
--------------------------------------- */
+/* Logo Navbar */
+.logo {
+  height: 50px;
+  object-fit: contain;
+}
+
+/* HERO SECTION (FONDO) */
 .hero {
-  background-image: url('../assets/imagen/destacada4.jpg');
-  background-size: cover;
-  background-position: center bottom; /* Imagen centrada desde la mitad hacia abajo */
   height: 100vh;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  background-image: url('../assets/imagen/destacada4.jpg');
+  background-size: cover;
+  background-position: center bottom;
   text-align: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* Capa oscura encima de la imagen */
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
-/* Contenedor principal del texto */
 .hero-content {
   position: relative;
   z-index: 2;
-  padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  height: 95%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  align-items: center;
+  padding: 3rem 1rem;
+  box-sizing: border-box;
 }
 
-/* Caja para el título (arriba) */
+/* Título (arriba solo) */
 .hero-title-box {
-  margin-top: 80px;
-}
-
-/* Título */
-.hero-title {
   font-family: 'Cardo', serif;
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+  font-size: 1rem !important;
+  margin-top: 0.1rem;
   color: #fff;
 }
 
-/* Caja para el eslogan + botón (abajo) */
-.hero-info-box {
-  margin-bottom: 80px;
+/* Logo dentro de un círculo semitransparente */
+.hero-logo-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hero-logo-circle {
+  background-color: rgba(102, 51, 0, 0.4); /* Marrón suave */
+  border-radius: 50%;
+  padding: 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transform: scale(0.8); /* achica todo el círculo */
+  transform-origin: center;
+}
+.hero-logo-circle img {
+  transform: scale(1.1); /* agranda el logo adentro para compensar */
+}
+
+.hero-logo {
+  max-width: 650px;
+  height: auto;
+  width: 100%;
+  object-fit: contain;
 }
 
 /* Eslogan */
@@ -91,15 +113,32 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   letter-spacing: 0.5px;
-  text-transform: none; /* sin mayúsculas forzadas */
-  margin-top: 1.2rem;
-  margin-bottom: 1.5rem;
+  margin: 0;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* Eslogan + botón más cerca del footer, con fondo translúcido */
+.hero-info-box {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
   color: #fff;
 }
 
-/* Botón */
+.hero-info-background {
+  background-color: rgba(255, 255, 255, 0.2); /* Blanco suave translúcido */
+  padding: 2rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón personalizado */
 .btn-custom {
-  background-color: #14402a;
+  background-color:  #14402a; /* Verde bosque translúcido */
   color: #fff;
   padding: 12px 25px;
   font-weight: bold;
@@ -109,13 +148,24 @@ body {
 }
 
 .btn-custom:hover {
-  background-color: #1e5637;
+  background-color: rgba(9, 53, 21, 0.9);
   color: #fff;
 }
 
-/* --------------------------------------
-   RESPONSIVE
--------------------------------------- */
+/* Footer */
+.footer-custom {
+  background-color: #14402a;
+  color: #fff;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.2rem;
@@ -125,17 +175,8 @@ body {
     font-size: 1.3rem;
   }
 
-  .logo img {
-    height: 70px;
-    margin-left: -10px;
-  }
-
-  .hero-title-box {
-    margin-top: 60px;
-  }
-
-  .hero-info-box {
-    margin-bottom: 60px;
+  .hero-logo {
+    max-width: 500px;
   }
 }
 
@@ -148,16 +189,9 @@ body {
     font-size: 1.1rem;
   }
 
-  .logo img {
-    height: 60px;
-  }
-
-  .hero-title-box {
-    margin-top: 40px;
-  }
-
-  .hero-info-box {
-    margin-bottom: 40px;
+  .hero-logo {
+    max-width: 380px;
   }
 }
+
 
