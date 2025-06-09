@@ -1,0 +1,91 @@
+/* Tipografía */
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: #333;
+  background-color: #FAF3E0;
+  margin: 0;
+  padding: 0;
+}
+
+/* HERO con imagen destacada */
+.hero {
+  background-image: url('../assets/imagen/destacada2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Superposición oscura para mejorar legibilidad */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Contenido centrado sobre fondo */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 700px;
+  color: #14402a;
+}
+
+.hero-content h1 {
+  font-family: 'Cardo', serif;
+  font-size: 2.5rem;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+}
+
+/* Botón personalizado */
+.btn-custom {
+  background-color: #14402a;
+  color: #fff;
+  padding: 12px 25px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #1e5637;
+  color: #fff;
+}
+
+/* Adaptaciones RESPONSIVAS */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content {
+    padding: 1.5rem;
+  }
+
+  .btn-custom {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .navbar-brand span {
+    font-size: 1.2rem;
+  }
+}
+
