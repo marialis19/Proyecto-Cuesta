@@ -1,4 +1,6 @@
-<head>
+<!DOCTYPE html>
+<html lang="es">
+<head> 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -20,7 +22,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img src="../assets/imagen/logo_navbar.png" alt="Logo de La Cuesta Glamping" class="logo img-fluid">
+          <img src="../assets/imagen/logo_navbar.png" alt="Logo de La Cuesta Glamping" class="logo img-fluid" style="max-height: 80px;">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
@@ -28,7 +30,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
             <li class="nav-item"><a class="nav-link" href="cabanas.html">Cabañas</a></li>
             <li class="nav-item"><a class="nav-link" href="actividades.html">Actividades</a></li>
             <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
@@ -38,50 +40,51 @@
     </nav>
   </header>
 
-  <section class="about-intro text-center py-5">
-  <div class="container">
-    <h1>Sobre La Cuesta Cabañas Glamping</h1>
-    <p class="lead">Un espacio pensado para que te desconectes del ruido y reconectes con lo esencial.</p>
-    <p>Enclavado en la naturaleza, La Cuesta Cabaña Glamping ofrece una experiencia única de hospedaje rústico y elegante, ideal para relajarte, explorar y disfrutar del entorno serrano.</p>
-  </div>
-</section>
+  <!-- CONTENIDO PRINCIPAL -->
+  <section class="about-intro text-center py-5 bg-light">
+    <div class="container">
+      <h1>Sobre La Cuesta Cabañas Glamping</h1>
+      <p class="lead">Un espacio pensado para que te desconectes del ruido y reconectes con lo esencial.</p>
+      <p>Enclavado en la naturaleza, La Cuesta Cabaña Glamping ofrece una experiencia única de hospedaje rústico y elegante, ideal para relajarte, explorar y disfrutar del entorno serrano.</p>
+    </div>
+  </section>
 
-<section class="about-values text-center py-5">
-  <div class="container">
-    <h2>Nuestros Valores</h2>
-    <div class="row mt-4">
-      <div class="col-md-4">
-        <img src="../assets/imagen/exterior.jpg" alt="Naturaleza" height="60">
-        <h5 class="mt-2">Conexión con la naturaleza</h5>
-        <p>Creemos en el poder de los entornos naturales para sanar y renovar.</p>
-      </div>
-      <div class="col-md-4">
-        <img src="../assets/imagen/ecalera_cabaña.jpg" alt="Sustentabilidad" height="60">
-        <h5 class="mt-2">Sustentabilidad</h5>
-        <p>Nos esforzamos por minimizar el impacto ambiental con acciones conscientes.</p>
-      </div>
-      <div class="col-md-4">
-        <img src="../assets/imagen/tres_cabañas.jpg" alt="Hospitalidad" height="60">
-        <h5 class="mt-2">Hospitalidad real</h5>
-        <p>Queremos que cada huésped se sienta como en casa.</p>
+  <section class="about-values text-center py-5">
+    <div class="container">
+      <h2>Nuestros Valores</h2>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <img src="../assets/imagen/exterior.jpg" alt="Naturaleza" class="img-fluid rounded shadow mb-3" style="max-height: 140px;">
+          <h5 class="mt-2">Conexión con la naturaleza</h5>
+          <p>Creemos en el poder de los entornos naturales para sanar y renovar.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="../assets/imagen/ecalera_cabaña.jpg" alt="Sustentabilidad" class="img-fluid rounded shadow mb-3" style="max-height: 140px;">
+          <h5 class="mt-2">Sustentabilidad</h5>
+          <p>Nos esforzamos por minimizar el impacto ambiental con acciones conscientes.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="../assets/imagen/tres_cabañas.jpg" alt="Hospitalidad" class="img-fluid rounded shadow mb-3" style="max-height: 140px;">
+          <h5 class="mt-2">Hospitalidad real</h5>
+          <p>Queremos que cada huésped se sienta como en casa.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
+  <!-- FOOTER -->
   <footer class="footer-custom mt-5">
-  <div class="container py-3 text-center">
-    <div class="mb-2">
-      <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-      <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a>
+    <div class="container py-3 text-center">
+      <div class="mb-2">
+        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a>
+      </div>
+      <div>
+        <p class="mb-0">&copy; 2025 Proyecto Cuesta - Todos los derechos reservados.</p>
+      </div>
     </div>
-    <div>
-      <p class="mb-0">&copy; 2025 Proyecto Cuesta - Todos los derechos reservados. </p>
-    </div>
-  </div>
-</footer>
+  </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
