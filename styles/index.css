@@ -2,11 +2,15 @@
 body {
   font-family: 'Quicksand', sans-serif;
   color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fondo solo para la página de inicio */
+body.home-page {
   background: url('../assets/imagen/destacada5.jpg') no-repeat center top;
   background-size: cover;
   background-attachment: fixed;
-  margin: 0;
-  padding: 0;
 }
 
 /* NAVBAR */
