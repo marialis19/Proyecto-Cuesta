@@ -1,10 +1,11 @@
 .about-intro {
-  background-color: rgba(181, 101, 29, 0.15); /* marrón quemado */
+  background-color: rgba(200, 150, 75, 0.356); 
   max-width: 90%;
   margin: 2rem auto;
   border-radius: 20px;
   padding: 2rem;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  border: 2px solid rgba(20, 64, 42, 0.6);
 }
 
 .about-intro h1 {
