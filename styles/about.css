@@ -1,5 +1,10 @@
 .about-intro {
-  background:  rgba(102, 51, 0, 0.4);
+  background-color: rgba(181, 101, 29, 0.15); /* marrón quemado */
+  max-width: 90%;
+  margin: 2rem auto;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
 }
 
 .about-intro h1 {
@@ -12,6 +17,15 @@
 .about-intro p {
   font-size: 1.1rem;
   color: #444;
+}
+
+.about-values {
+  background: linear-gradient(to bottom, #fff7f0, #f5eadc);
+  max-width: 90%;
+  margin: 2rem auto;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
 }
 
 .about-values h2 {
@@ -32,12 +46,6 @@
   color: #555;
 }
 
-/* Fondo degradado suave */
-.about-values {
-  background: linear-gradient(to bottom, #fff7f0, #f5eadc);
-}
-
-/* Cards con efecto hover suave */
 .about-values .col-md-4 {
   background-color: rgba(245, 234, 220, 0.9); /* beige suave */
   border-radius: 15px;
@@ -60,11 +68,3 @@
   transform: scale(1.05);
 }
 
-.about-intro,
-.about-values {
-  max-width: 90%;           /* hace que no ocupen el 100% */
-  margin: 2rem auto;        /* centrado + separación vertical */
-  border-radius: 20px;      /* bordes redondeados */
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); /* sombra sutil */
-  padding: 2rem;
-}
