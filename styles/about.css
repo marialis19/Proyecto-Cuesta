@@ -1,5 +1,5 @@
 .about-intro {
-  background-color: rgba(255, 255, 255, 0.356); 
+  background-color: rgba(140, 171, 128, 0.356); 
   max-width: 90%;
   margin: 2rem auto;
   border-radius: 20px;
@@ -57,7 +57,7 @@
 }
 
 .about-values .col-md-4 {
-  background-color: rgba(245, 234, 220, 0.9); /* beige suave */
+  background-color: rgba(178, 211, 165, 0.356); /* beige suave */
   border-radius: 15px;
   padding: 2rem 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -66,7 +66,7 @@
 
 .about-values .col-md-4:hover {
   transform: scale(1.03);
-  box-shadow: 0 0 20px rgba(102, 51, 0, 0.3); /* marrón translúcido */
+  box-shadow: 0 0 20px rgba(0, 102, 24, 0.3); /* marrón translúcido */
 }
 
 .about-values img {
@@ -78,10 +78,32 @@
   transform: scale(1.05);
 }
 
+.seccion-foto-fogata {
+  background-image: url('../assets/imagen/fogata.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px; /* ajustable según tu diseño */
+  width: 100%;
+  position: relative;
+  margin-top: -32px; /* opcional para unir mejor con la sección anterior */
+  margin-bottom: 0;
+  /* Efecto profesional con overlay oscuro sutil */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seccion-foto-fogata::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0); /* oscurece un poco para dar dramatismo */
+}
+
 body {
   background: linear-gradient(-45deg, #a68b6d, #d9c5b2, #e8ded1, #f5f1ea);
   background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
 }
 
 @keyframes gradientBG {
@@ -89,4 +111,3 @@ body {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-
