@@ -1,3 +1,7 @@
+.about-intro {
+  background: linear-gradient(to bottom, #e8f5ec, #d2ede0);
+}
+
 .about-intro h1 {
   font-family: 'Cardo', serif;
   font-size: 2.8rem;
@@ -54,4 +58,13 @@
 
 .about-values .col-md-4:hover img {
   transform: scale(1.05);
+}
+
+.about-intro,
+.about-values {
+  max-width: 90%;           /* hace que no ocupen el 100% */
+  margin: 2rem auto;        /* centrado + separación vertical */
+  border-radius: 20px;      /* bordes redondeados */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); /* sombra sutil */
+  padding: 2rem;
 }
