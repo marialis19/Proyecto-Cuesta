@@ -8,9 +8,9 @@ body {
 
 /* --- Sección: Nuestras Cabañas --- */
 .cabañas-section {
-  padding: 60px 0;
   display: flex;
   flex-wrap: wrap;
+  padding: 60px 0;
 }
 
 .cabañas-text {
@@ -31,9 +31,9 @@ body {
 
 /* --- Sección: Servicios --- */
 .servicios-section {
-  padding: 60px 0;
   display: flex;
   flex-wrap: wrap;
+  padding: 60px 0;
 }
 
 .servicios-carousel {
@@ -59,9 +59,6 @@ body {
 }
 
 /* --- Sección: Tarifas --- */
-.tarifas-section {
-  background-color: #fff;
-}
 
 .card-tarifa {
   background-color: #14402a;
@@ -102,4 +99,30 @@ body {
   padding: 20px 0;
 }
 
+.contenedor-seccion {
+  background: linear-gradient(to bottom, #fff7f0, #f5eadc);
+  max-width: 90%;
+  margin: 2rem auto;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  border: 2px solid rgba(20, 64, 42, 0.6);
+}
+
+/* Fondo marrón para CABAÑAS */
+.seccion-cabañas {
+  background: #fff;
+  color: white;
+}
+
+/* Fondo verde para SERVICIOS */
+.seccion-servicios {
+  background: linear-gradient(to bottom, #194f34, #103820); /* verde profundo */
+  color: white;
+}
+
+body {
+  background: linear-gradient(-45deg, #b9690d, #d9c5b2, #e8ded1, #f5f1ea);
+  background-size: 400% 400%;
+}
 

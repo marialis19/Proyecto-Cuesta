@@ -1,5 +1,5 @@
 .about-intro {
-  background-color: rgba(140, 171, 128, 0.356); 
+  background-color: #fff; 
   max-width: 90%;
   margin: 2rem auto;
   border-radius: 20px;
@@ -25,7 +25,7 @@
 
 .about-intro p {
   font-size: 1.1rem;
-  color: #444;
+  color: #333232;
 }
 
 /* Botón personalizado */
@@ -119,6 +119,6 @@
 }
 
 body {
-  background: linear-gradient(-45deg, #a68b6d, #d9c5b2, #e8ded1, #f5f1ea);
+  background: linear-gradient(-45deg, #b9690d, #d9c5b2, #e8ded1, #f5f1ea);
   background-size: 400% 400%;
 }
