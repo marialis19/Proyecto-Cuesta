@@ -1,5 +1,3 @@
-/* ESTILOS CABANAS.CSS */
-
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
@@ -8,17 +6,17 @@ body {
   color: #333;
 }
 
-/* --- SECCION: Nuestras Cabañas --- */
+/* --- Sección: Nuestras Cabañas --- */
 .cabañas-section {
-  min-height: 100vh;
+  padding: 60px 0;
   display: flex;
   flex-wrap: wrap;
 }
 
 .cabañas-text {
   flex: 1 1 50%;
-  background-color: #fff;
   padding: 60px 40px;
+  background-color: #fff;
 }
 
 .cabañas-carousel {
@@ -26,13 +24,14 @@ body {
 }
 
 .cabañas-carousel img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* --- SECCION: Servicios que incluye --- */
+/* --- Sección: Servicios --- */
 .servicios-section {
-  min-height: 100vh;
+  padding: 60px 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -42,13 +41,14 @@ body {
 }
 
 .servicios-carousel img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 .servicios-text {
   flex: 1 1 50%;
-  background-color: #14402a;
+  background-color: #194f34;
   color: white;
   padding: 60px 40px;
 }
@@ -58,7 +58,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* --- SECCION: Tarifas --- */
+/* --- Sección: Tarifas --- */
 .tarifas-section {
   background-color: #fff;
 }
@@ -79,7 +79,7 @@ body {
   text-align: center;
 }
 
-/* --- BOTON CUSTOM --- */
+/* --- Botón personalizado --- */
 .btn-custom {
   background-color: #14402a;
   color: #fff;
@@ -95,9 +95,11 @@ body {
   color: #fff;
 }
 
-/* --- FOOTER --- */
+/* --- Footer --- */
 .footer-custom {
   background-color: #14402a;
   color: white;
   padding: 20px 0;
 }
+
+
