@@ -1,0 +1,103 @@
+/* ESTILOS CABANAS.CSS */
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* --- SECCION: Nuestras Cabañas --- */
+.cabanas-section {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cabanas-text {
+  flex: 1 1 50%;
+  background-color: #fff;
+  padding: 60px 40px;
+}
+
+.cabanas-carousel {
+  flex: 1 1 50%;
+}
+
+.cabanas-carousel img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- SECCION: Servicios que incluye --- */
+.servicios-section {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.servicios-carousel {
+  flex: 1 1 50%;
+}
+
+.servicios-carousel img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.servicios-text {
+  flex: 1 1 50%;
+  background-color: #14402a;
+  color: white;
+  padding: 60px 40px;
+}
+
+.servicios-text ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* --- SECCION: Tarifas --- */
+.tarifas-section {
+  background-color: #fff;
+}
+
+.card-tarifa {
+  background-color: #14402a;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.card-tarifa:hover {
+  transform: scale(1.03);
+}
+
+.card-tarifa .card-body {
+  text-align: center;
+}
+
+/* --- BOTON CUSTOM --- */
+.btn-custom {
+  background-color: #14402a;
+  color: #fff;
+  padding: 12px 25px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: rgba(9, 53, 21, 0.9);
+  color: #fff;
+}
+
+/* --- FOOTER --- */
+.footer-custom {
+  background-color: #14402a;
+  color: white;
+  padding: 20px 0;
+}
