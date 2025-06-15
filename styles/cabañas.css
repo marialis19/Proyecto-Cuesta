@@ -9,23 +9,23 @@ body {
 }
 
 /* --- SECCION: Nuestras Cabañas --- */
-.cabanas-section {
+.cabañas-section {
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
 }
 
-.cabanas-text {
+.cabañas-text {
   flex: 1 1 50%;
   background-color: #fff;
   padding: 60px 40px;
 }
 
-.cabanas-carousel {
+.cabañas-carousel {
   flex: 1 1 50%;
 }
 
-.cabanas-carousel img {
+.cabañas-carousel img {
   height: 100%;
   object-fit: cover;
 }
