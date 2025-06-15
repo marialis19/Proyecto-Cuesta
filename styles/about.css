@@ -64,17 +64,17 @@
 
 .about-values h5 {
   font-weight: 600;
-  color: #333;
+  color: #fff;
   font-size: 1.2rem;
 }
 
 .about-values p {
   font-size: 0.95rem;
-  color: #555;
+  color: #fff;
 }
 
 .about-values .col-md-4 {
-  background-color: rgba(178, 211, 165, 0.356); /* beige suave */
+ background-color:  #194f34;
   border-radius: 15px;
   padding: 2rem 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
