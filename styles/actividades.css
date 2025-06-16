@@ -31,7 +31,7 @@
 .lugares-recomendados h5 {
   font-family: 'Cardo', serif;
   font-size: 1.5rem;
-  color: #00BFA6;
+  color: #14402a;
 }
 
 .lugares-recomendados p {
@@ -59,3 +59,7 @@ section {
   margin-top: 20px;
 }
 
+body {
+  background: linear-gradient(-45deg, #b9690d, #d9c5b2, #e8ded1, #f5f1ea);
+  background-size: 400% 400%;
+}
