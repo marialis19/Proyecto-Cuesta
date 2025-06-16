@@ -83,11 +83,11 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 350px; /* ajustable según tu diseño */
+  height: 450px; /* ajustable según tu diseño */
   width: 100%;
   position: relative;
   margin-top: -32px; /* opcional para unir mejor con la sección anterior */
-  margin-bottom: 0;
+  margin-bottom: -50px;
   /* Efecto profesional con overlay oscuro sutil */
   display: flex;
   align-items: center;
@@ -98,7 +98,7 @@
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0); /* oscurece un poco para dar dramatismo */
+  background: rgba(0, 0, 0, 0.1); /* oscurece un poco para dar dramatismo */
 }
 
 body {
