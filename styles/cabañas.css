@@ -6,13 +6,6 @@ body {
   color: #333;
 }
 
-/* --- Sección: Nuestras Cabañas --- */
-.cabañas-section {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 60px 0;
-}
-
 .seccion-cabañas h2 {
   color: #14402a; /* verde oscuro */
 }
