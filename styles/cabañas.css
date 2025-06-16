@@ -163,3 +163,81 @@ color: #14402a;
   transform: scale(1.2);     /* El ícono crece apenas */
 }
 
+.hero-cabanas {
+  background-color: #f5eadc; /* color claro cálido */
+  padding: 80px 20px 60px;
+  border-bottom: 2px solid rgba(20, 64, 42, 0.3);
+  border-radius: 0 0 20px 20px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.titulo-hero {
+  font-family: 'Cardo', serif;
+  font-size: 2.5rem;
+  color: #14402a;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.subtitulo-hero {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.titulo-con-lineas {
+  position: relative;
+  text-align: center;
+  font-family: 'Cardo', serif;
+  color: #14402a;
+}
+
+/* Flechas simples grises por fuera del carousel */
+.flecha-afuera {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: grey;
+  z-index: 2;
+  padding: 0;
+}
+
+.carousel-control-prev.flecha-afuera {
+  left: -40px; /* flecha izquierda fuera */
+}
+
+.carousel-control-next.flecha-afuera {
+  right: -40px; /* flecha derecha fuera */
+}
+
+/* Indicadores (puntitos) grises debajo de la imagen */
+.carousel-indicators {
+  justify-content: center;
+  margin-top: 1rem;
+  position: static; /* los deja debajo, no encima */
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: grey;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 0.5;
+  margin: 0 4px;
+  border: none;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+}
+
+/* Imagen del carrusel */
+.carrusel-img {
+  height: 450px;
+  object-fit: cover;
+  border-radius: 15px;
+}
