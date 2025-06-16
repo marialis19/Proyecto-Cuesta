@@ -28,23 +28,6 @@
   color: #333232;
 }
 
-/* Botón personalizado */
-.btn-custom {
-  background-color:  #14402a; /* Verde bosque */
-  color: #fff;
-  padding: 12px 25px;
-  font-weight: bold;
-  border-radius: 8px; /* Rectángulo con bordes suaves */
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.btn-custom:hover {
-  background-color: rgba(9, 53, 21, 0.9);
-  color: #fff;
-}
-
-
 .about-values {
   background: linear-gradient(to bottom, #fff7f0, #f5eadc);
   max-width: 90%;

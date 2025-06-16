@@ -1,0 +1,56 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 1rem;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+/* Fondo personalizado reutilizable */
+.bg-custom {
+  background-color: #14402a !important;
+}
+
+/* Logo Navbar */
+.logo {
+  height: 50px;
+  object-fit: contain;
+}
+
+/* Botón personalizado */
+.btn-custom {
+  background-color:  #14402a; /* Verde bosque translúcido */
+  color: #fff;
+  padding: 12px 25px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: rgba(9, 53, 21, 0.9);
+  color: #fff;
+}
+
+.footer-custom {
+  background-color: #14402a;
+  color: #fff;
+  height: auto;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-custom a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-custom a:hover {
+  color: #b9fbc0;
+}

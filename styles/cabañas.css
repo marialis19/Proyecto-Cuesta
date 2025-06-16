@@ -1,5 +1,4 @@
 body {
-  font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
@@ -80,29 +79,6 @@ body {
 
 .card-tarifa .card-body {
   text-align: center;
-}
-
-/* --- Botón personalizado --- */
-.btn-custom {
-  background-color: #14402a;
-  color: #fff;
-  padding: 12px 25px;
-  font-weight: bold;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.btn-custom:hover {
-  background-color: rgba(9, 53, 21, 0.9);
-  color: #fff;
-}
-
-/* --- Footer --- */
-.footer-custom {
-  background-color: #14402a;
-  color: white;
-  padding: 20px 0;
 }
 
 .contenedor-seccion {
