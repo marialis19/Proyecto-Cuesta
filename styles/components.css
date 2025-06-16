@@ -7,14 +7,31 @@
   background-color: #fff;
 }
 
+.navbar-nav .nav-link {
+  color: white;
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  transform: scale(1.07); /* Agranda levemente la letra */
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
 /* Fondo personalizado reutilizable */
 .bg-custom {
   background-color: #14402a !important;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 /* Logo Navbar */
 .logo {
-  height: 50px;
+  height: 53px;
   object-fit: contain;
 }
 
