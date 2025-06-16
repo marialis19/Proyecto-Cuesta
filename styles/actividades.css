@@ -1,0 +1,61 @@
+/* Tipografía principal */
+.actividades-intro h1,
+.lugares-recomendados h2 {
+  font-family: 'Cardo', serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #14402a;
+}
+
+.actividades-intro p {
+  color: #333232;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Carrusel */
+.actividades-carousel .carousel {
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.actividades-carousel img {
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Sección lugares recomendados */
+.lugares-recomendados h5 {
+  font-family: 'Cardo', serif;
+  font-size: 1.5rem;
+  color: #00BFA6;
+}
+
+.lugares-recomendados p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Cards de imágenes */
+.lugares-recomendados img {
+  width: 100%;
+  height: auto;
+  max-height: 260px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Espaciado final */
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* Ajustes para botón final */
+.btn-custom {
+  margin-top: 20px;
+}
+
