@@ -212,7 +212,7 @@ color: #14402a;
 }
 
 .card-tarifa img {
-  height: 450px;           /* o el alto que te guste */
+  height: 450px;           /*alto que te guste */
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
