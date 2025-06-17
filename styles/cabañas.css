@@ -103,11 +103,6 @@ body {
   color: white;
 }
 
-body {
-  background: linear-gradient(-45deg, #b9690d, #d9c5b2, #e8ded1, #f5f1ea);
-  background-size: 400% 400%;
-}
-
 .tarifas-section h2 {
 color: #14402a;
 }

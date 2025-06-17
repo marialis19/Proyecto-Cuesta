@@ -51,6 +51,11 @@ body {
   color: #fff;
 }
 
+body {
+  background: linear-gradient(-45deg, #b9690d, #d9c5b2, #e8ded1, #f5f1ea);
+  background-size: 400% 400%;
+}
+
 .footer-custom {
   background-color: #14402a;
   color: #fff;

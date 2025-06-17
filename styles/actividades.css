@@ -2,7 +2,7 @@
 .actividades-intro h1,
 .lugares-recomendados h2 {
   font-family: 'Cardo', serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 2.5rem;
   color: #14402a;
 }
@@ -13,18 +13,46 @@
   margin: 0 auto;
 }
 
+/* Caja blanca para el título principal */
+.intro-box {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 900px;
+  border: 2px solid rgba(20, 64, 42, 0.6);
+}
+
+/* Efecto hover */
+.intro-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
 /* Carrusel */
 .actividades-carousel .carousel {
   border-radius: 20px;
   overflow: hidden;
-  max-width: 1000px;
+  max-width: 1280px;
   margin: 0 auto;
+}
+
+/* Cada slide del carrusel */
+.actividades-carousel .carousel-item {
+  height: 500px; /* Altura fija para todo el bloque */
+}
+
+.actividades-carousel .carousel-item img {
+  height: 100%;
+  width: 450%;
+  object-fit: cover;
+  border-radius: 0; /* Evitamos doble borde redondeado */
 }
 
 .actividades-carousel img {
   height: auto;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 0px;
 }
 
 /* Sección lugares recomendados */
@@ -35,7 +63,7 @@
 }
 
 .lugares-recomendados p {
-  color: #555;
+  color: #333232;
   font-size: 1rem;
 }
 
@@ -48,6 +76,46 @@
   border-radius: 15px;
 }
 
+/* Contenedor individual de cada actividad */
+.actividad-card {
+  background-color: #14402a;
+  color: #fff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Tipografía dentro de las tarjetas */
+.actividad-card h4 {
+  font-family: 'Cardo', serif;
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+
+.actividad-card p {
+  font-size: 1.2rem;
+  color: #f1f1f1;
+}
+
+/* Imagen con efecto suave */
+.actividad-img {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.actividad-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Línea separadora si querés en vez de márgenes */
+.actividad-card:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
 /* Espaciado final */
 section {
   padding-top: 40px;
@@ -59,7 +127,9 @@ section {
   margin-top: 20px;
 }
 
-body {
-  background: linear-gradient(-45deg, #b9690d, #d9c5b2, #e8ded1, #f5f1ea);
-  background-size: 400% 400%;
+/* Ajuste responsive para móviles */
+@media (max-width: 768px) {
+  .actividades-carousel img {
+    height: 250px; /* Menor altura en pantallas pequeñas */
+  }
 }
