@@ -41,14 +41,18 @@ body {
   color: #fff;
   padding: 12px 25px;
   font-weight: bold;
-  border-radius: 8px;
+  border-radius: 9px;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  border-color: #fff;
 }
 
 .btn-custom:hover {
-  background-color: rgba(9, 53, 21, 0.9);
-  color: #fff;
+  background-color: #fff;
+  color: #14402a;
+  border-radius: 9px;
+  border-color: #14402a;
+  font-weight: bold;
 }
 
 body {
