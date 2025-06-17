@@ -1,0 +1,87 @@
+.contacto-hero h1 {
+  font-family: 'Cardo', serif;
+  color: #14402a;
+  font-size: 2.5rem;
+}
+
+.contacto-hero p {
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contacto-intro {
+  background-color: #ffffffcc;
+  max-width: 90%;
+  margin: 2rem auto;
+  border-radius: 20px;
+  padding: 2rem;
+  border: 2px solid rgba(20, 64, 42, 0.6);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contacto-intro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.info-contacto h5 {
+  font-family: 'Cardo', serif;
+  color: #14402a;
+}
+
+.info-contacto p {
+  color: #333;
+}
+
+.mapa-ubicacion h2,
+.faq h2 {
+  font-family: 'Cardo', serif;
+  color: #14402a;
+  font-size: 2rem;
+}
+
+.accordion-button {
+  font-family: 'Quicksand', sans-serif;
+  border-color: #14402a;
+}
+
+.accordion-body {
+  background-color: #f9f9f9;
+}
+
+.contacto-hero h1 {
+  font-family: 'Cardo', serif;
+  color: #14402a;
+  font-size: 2.5rem;
+}
+
+.contacto-hero p {
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contacto-hero .container {
+  max-width: 800px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #e0f0e8; /* verde suave */
+  color: #14402a;   
+  box-shadow: none;         /* el verde que usás en títulos */
+}
+
+.accordion-button {
+  border: 1px solid #14402a;
+}
+
+/* Cambiar el borde y sombra azul al hacer clic */
+.accordion-button:focus {
+  border-color: #14402a; /* borde verde */
+  box-shadow: 0 0 0 0.25rem rgba(52, 127, 89, 0.401); /* sombra verde */
+  outline: none; /* elimina contorno azul */
+}
