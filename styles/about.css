@@ -61,20 +61,13 @@
   border-radius: 15px;
   padding: 2rem 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(0.95);
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 
 .about-values .col-md-4:hover {
   transform: scale(1.03);
   box-shadow: 0 0 20px rgba(0, 102, 24, 0.3); /* marrón translúcido */
-}
-
-.about-values .col-md-4 {
-  transform: scale(0.95);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.about-values .col-md-4:hover {
-  transform: scale(1.01);
 }
 
 .about-values img {

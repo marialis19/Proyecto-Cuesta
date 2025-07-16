@@ -44,15 +44,9 @@
 
 .actividades-carousel .carousel-item img {
   height: 100%;
-  width: 450%;
+  width: 100%;
   object-fit: cover;
   border-radius: 0; /* Evitamos doble borde redondeado */
-}
-
-.actividades-carousel img {
-  height: auto;
-  object-fit: cover;
-  border-radius: 0px;
 }
 
 /* Sección lugares recomendados */

@@ -119,15 +119,7 @@ color: #14402a;
   transform: scale(1.02);    /* Se agranda levemente */
 }
 
-.servicios-text ul li i {
-  transition: transform 0.3s ease;
-}
-
-.servicios-text ul li:hover i {
-  transform: scale(1.2);     /* El ícono crece apenas */
-}
-
-.hero-cabanas {
+.hero-cabañas {
   background-color: #f5eadc; /* color claro cálido */
   padding: 80px 20px 60px;
   border-bottom: 2px solid rgba(20, 64, 42, 0.3);
